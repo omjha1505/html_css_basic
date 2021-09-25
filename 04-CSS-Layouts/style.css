@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  width: 700px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -39,7 +39,6 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0px;
-  width: 500px;
 }
 
 h1,
@@ -99,6 +98,7 @@ ol {
 }*/
 /*Difference b/w ID and class. ID should be unique through out the one HTML File. so if want to
 reuse the same CSS properties go for class Defination
+
 */
 #author {
   font-style: italic;
@@ -116,6 +116,7 @@ reuse the same CSS properties go for class Defination
 
 .related {
   list-style: none;
+  margin-left: 0%;
 }
 
 li:first-child {
@@ -199,6 +200,10 @@ h2::after {
   right: -25px;
 }
 
+/*This is a New Item here.
+1st way of Building Layouts : 
+Floats : This is a older way of building Layouts using Float properties.
+Its outdated but still getting used in older websites*/
 /*Floats*/
 .author-img {
   float: left;
@@ -207,6 +212,32 @@ h2::after {
 
 .author {
   float: left;
-  margin-top: 20px;
   padding-left: 10px;
+  margin-top: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
